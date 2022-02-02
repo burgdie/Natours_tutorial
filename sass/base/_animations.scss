@@ -1,0 +1,50 @@
+
+/* 
+  Two types of animations in CSS
+  The first one uses the transition property and then change the properties taht you want to anmiate on an event like when we hover the element
+  The animation used for the header is based on keyframes is a bit complexer but offers more possibilities.
+*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(15px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-15px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
