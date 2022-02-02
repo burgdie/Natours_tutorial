@@ -1,5 +1,4 @@
 
-/* Pseudo classes are used to style elements under special conditions */
 
 .btn {
   &,
@@ -55,8 +54,6 @@
 
   }
 
- 
-
   &--animated {
     animation-name: moveInBottom;
     animation-duration: 1s;
@@ -65,3 +62,4 @@
     animation-timing-function: ease-out;
   }
 }
+

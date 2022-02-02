@@ -1,5 +1,4 @@
-
-/* 
+ /* 
   Two types of animations in CSS
   The first one uses the transition property and then change the properties taht you want to anmiate on an event like when we hover the element
   The animation used for the header is based on keyframes is a bit complexer but offers more possibilities.
@@ -11,7 +10,7 @@
   }
 
   80% {
-    transform: translateX(15px)
+    transform: translateX(1.5rem)
   }
 
   100% {
@@ -27,7 +26,7 @@
   }
 
   80% {
-    transform: translateX(-15px)
+    transform: translateX(-1.5rem)
   }
 
   100% {
