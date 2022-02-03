@@ -1,6 +1,7 @@
-/* **** Start Variables  *****/
-/*  COLORS:  */
-/* **** End Variables *****/
+/* **** Colors  *****/
+/* **** End Colors *****/
+/* **** Start Grid *****/
+/* **** End Grid *****/
 /* 
   Two types of animations in CSS
   The first one uses the transition property and then change the properties taht you want to anmiate on an event like when we hover the element
@@ -145,3 +146,46 @@ body {
     position: absolute;
     top: 40%;
     left: 50%; }
+
+.row {
+  /* max-width means if we have enough available space
+    then it has the width we have specified
+    If the viewport is smaller then it will sinmply fill 100% of the available space
+  */
+  max-width: 114rem;
+  background-color: #eee;
+  /*   to center the row 
+      it will center a block element within another block-element
+      margin of tp and bottom is 0 keft and right is auto
+      wit auto the browser will figure out the left and right margin and it will be the same
+  */
+  margin: 0 auto;
+  /* we select everything except the last-child (last row) */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    /* mandatory otherwise a pseudo-element does not 
+       appeare on the page.It will be empty because we don't want to see it on the page 
+    */
+    content: "";
+    display: table;
+    /* display it with the table value*/
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    /*** size of one grid element: (100% of one row - the gutter) / 2  **/
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2*((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2*((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3*((100% - 3 * 6rem) / 4) + 2 * 6rem); }

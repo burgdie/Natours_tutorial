@@ -1,0 +1,10 @@
+@mixin clearfix {
+  &::after {
+    /* mandatory otherwise a pseudo-element does not 
+       appeare on the page.It will be empty because we don't want to see it on the page 
+    */
+    content:""; 
+    display: table; /* display it with the table value*/
+    clear: both;
+  }
+}
