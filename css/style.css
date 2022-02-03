@@ -85,6 +85,25 @@ body {
     animation-duration: 2.5s;
     animation-timing-function: ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn {
   /* btn pseudo Element that looks like the button put we but it behind the button */ }
   .btn, .btn:link, .btn:visited {
@@ -130,7 +149,7 @@ body {
     animation-timing-function: ease-out; }
 
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/hero.jpg");
   background-size: cover;
   background-position: top;
@@ -153,7 +172,6 @@ body {
     If the viewport is smaller then it will sinmply fill 100% of the available space
   */
   max-width: 114rem;
-  background-color: #eee;
   /*   to center the row 
       it will center a block element within another block-element
       margin of tp and bottom is 0 keft and right is auto
@@ -172,7 +190,6 @@ body {
     /* display it with the table value*/
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -189,3 +206,8 @@ body {
     width: calc(2*((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3*((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }

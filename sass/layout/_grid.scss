@@ -4,7 +4,7 @@
     If the viewport is smaller then it will sinmply fill 100% of the available space
   */
   max-width: $grid-width;
-  background-color: #eee;
+  // background-color: #eee;
   /*   to center the row 
       it will center a block element within another block-element
       margin of tp and bottom is 0 keft and right is auto
@@ -24,7 +24,7 @@
 
   // select all classes that starts with "col-"
   [class^="col-"] {
-    background-color: orangered;
+    // background-color: orangered;
     float: left;
 
     &:not(:last-child){
